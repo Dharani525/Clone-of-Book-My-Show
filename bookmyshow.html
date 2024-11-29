@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css">
+  <style>
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .des {
+      margin: 0%;
+      padding: 0%;
+    }
+  </style>
+</head>
+
+<body style="background-color: rgb(249, 242, 231);">
+  <nav class="navbar bg-white">
+    <div
+      class="container-fluid d-flex justify-content-center ms-5 me-5 bg-white"
+    >
+      <img src="pngwing.com.png" style="display: flex;height: 10%; width: 10%; " >
+      <form class="d-flex w-75 me-5 ms-5" role="search ">
+        
+        <input
+          class="form-control me-2 "
+          type="search"
+          placeholder=" Search for movies,Events,Plays,Sports and Activities"
+          aria-label="Search"
+
+        />
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+
+        <div class="d-flex" style="margin-left: 20%">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle text-dark bg-white border border-white ms-5"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              City
+            </button>
+            <ul class="dropdown-menu dropdown-menu-white">
+              <li><a class="dropdown-item" href="#">Chennai</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Coimbatore</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Namaakkal</a></li>
+              <li><a class="dropdown-item" href="#">Trichy</a></li>
+            </ul>
+          </div>
+
+          <button type="button" class="btn btn-danger ms-3 text-nowrap">
+            Sign in
+          </button>
+        </div>
+        <svg
+          class="w-25 ms-5 bg-white text-dark"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="currentColor"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </form>
+    </div>
+  </nav>
+
+  <!-- header -->
+
+  <header class="d-flex justify-content-between bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid ms-5">
+        <a class="navbar-brand navbar d-lg-none d-sm-block" href="#"
+          ><img src="pngwing.com.png"></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Movies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Stream</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-disabled="true">Plays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-disabled="true">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-disabled="true">Activities</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary me-5"
+      style="padding-right: 60px"
+    >
+      <div class="container-fluid ms-5">
+        <a class="navbar-brand navbar d-lg-none d-sm-block" href="#"
+          >Navbar</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >ListYourShow</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Corporates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-disabled="true">Gift Cards</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- section-1 ==> carousel slide image -->
+  <div class="carouselbar">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1724995970579_annetteweb.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1724997803761_twistersweb1sep.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- section-2 ==>Recommended Movies -->
+  <div class="container  contain1" style="margin-top: 3%;margin-left: 9%;">
+    <h3>Recommended Movies</h3>
+    <!-- card1 -->
+    <div class="card-container" style="width: 95%;display: flex;justify-content: space-between;">
+      <div class="card card1" style=" width: 14rem;height: 12rem;">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny43LzEwICAxLjNLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00407794-affsxqeqnl-portrait.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body des">
+          <p class="card-text">
+          <h5>Aho Vikramaarka!</h5> Action/Drama </p>
+        </div>
+      </div>
+      <!-- card2 -->
+      <div class="card card2" style=" width: 14rem;height: 12rem;">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MzQ5SyBMaWtlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00401439-umbvunwrrl-portrait.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body des">
+          <p class="card-text">
+          <h5>Greatest Of All Time</h5> Action/Drama/Thriller </p>
+        </div>
+      </div>
+      <!-- card3 -->
+      <div class="card card3" style=" width: 14rem;height: 12rem;">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC43LzEwICAyNC4xSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00408594-kxylmtxdpl-portrait.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body des">
+          <p class="card-text">
+          <h5>Vaazhai</h5> Drama </p>
+        </div>
+      </div>
+      <!-- card4 -->
+      <div class="card card4" style=" width: 14rem;height: 12rem;">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC40LzEwICAzNi44SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00380018-vlvxmddfxg-portrait.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body des">
+          <p class="card-text">
+          <h5>Demonty Colony-2 Vengence Of Unholy</h5> Horror/Thriller </p>
+        </div>
+      </div>
+      <!-- card5 -->
+      <div class="card card5" style=" width: 14rem;height: 12rem;">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICA0LjhLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00409364-ucywxtdzsg-portrait.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body des">
+          <p class="card-text">
+          <h5>Surya's Saturday</h5> Action/Drama </p>
+        </div>
+      </div>
+    </div>
+    <!--section-3 ==> landscape Image div  -->
+    <div class="simage" style="margin-top: 28%;">
+      <img
+        src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png"
+        style="width: 95%;">
+    </div>
+    <!--section-4 ==>card images-->
+
+    <div class="row image-land" style="margin-top: 7%;display: flex;justify-content: space-between;width: 97%;">
+      <h4>The Best Live Events</h4>
+      <div class="col">
+        <img style="width: 14rem;"
+          src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NiBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/bmshp-desktop-amusement-park-collection-202404190106.png">
+      </div>
+      <div class="col">
+        <img style="width: 14rem;"
+          src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png">
+      </div>
+      <div class="col">
+        <img style="width: 14rem;"
+          src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/bmshp-desktop-kids-collection-202404190106.png">
+      </div>
+      <div class="col">
+        <img style="width: 14rem;"
+          src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NDUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png">
+      </div>
+      <div class="col">
+        <img style="width: 14rem;"
+          src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- section 5 ==> color premiere  -->
+  <div class="color-premiere" style="margin-top: 5%;margin-left: 0;margin-right: 0%;background: rgb(43, 49, 72);">
+    <div class="container">
+      <img style="margin-left: 3%;width: 75rem;"
+        src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-banner-web-collection-202208191200.png">
+    </div>
+    <div class="container" style="margin-left: 9%; width: 79rem;height: 34rem;">
+      <h2 style="color: rgb(255, 255, 255);font-family: Roboto;font-size: 24px;font-weight: 700;line-height: 1.17;">
+        Premieres</h2>
+      <p style="color: rgb(255, 255, 255);font-family: Roboto;font-size: 14px;font-weight: normal;line-height: 1.43;">
+        Brand new releases every friday
+      </p>
+      <div class="row card-container2">
+        <div class="card col border-0 bg-transparent" style="width: 14rem ;">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00408376-gbxbtftqtd-portrait.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body mt-0 p-0">
+            <p class="card-text" style="color: rgb(255, 255, 255);">
+            <h5 style="color: rgb(255, 255, 255);">Someone Like you</h5><span
+              style="color: rgb(255, 255, 255);">English</span></p>
+          </div>
+        </div>
+        <div class="card col border-0 bg-transparent" style="width: 14rem ;">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00408373-zekqewelca-portrait.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body mt-0 p-0">
+            <p class="card-text" style="color: rgb(255, 255, 255);">
+            <h5 style="color: rgb(255, 255, 255);">Twister (preview)</h5><span
+              style="color: rgb(255, 255, 255);">English</span></p>
+          </div>
+        </div>
+        <div class="card col border-0 bg-transparent" style="width: 14rem ;">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00408322-vccungmusv-portrait.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body mt-0 p-0">
+            <p class="card-text" style="color: rgb(255, 255, 255);">
+            <h5 style="color: rgb(255, 255, 255);">DADDIO</h5><span style="color: rgb(255, 255, 255);">English</span>
+            </p>
+          </div>
+        </div>
+        <div class="card col border-0 bg-transparent" style="width: 14rem ;">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00381784-axfdgtrgvq-portrait.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body mt-0 p-0">
+            <p class="card-text" style="color: rgb(255, 255, 255);">
+            <h5 style="color: rgb(255, 255, 255);">Moondram Manithan</h5><span
+              style="color: rgb(255, 255, 255);">Tamil</span></p>
+          </div>
+        </div>
+        <div class="card col border-0 bg-transparent" style="width: 14rem ;">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00400807-gctmjvgfya-portrait.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body mt-0 p-0">
+            <p class="card-text" style="color: rgb(255, 255, 255);">
+            <h5 style="color: rgb(255, 255, 255);">Pullu Rising</h5><span
+              style="color: rgb(255, 255, 255);">Malayalam</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section-6 ==>Music Studio -->
+  <div class="container studio" style="margin-top: 2%;margin-left: 9%;">
+    <h4 style="font-weight: 700;">Your Music Studio</h4>
+    <div class="row card-container2">
+      <div class="card col border-0 bg-transparent" style="width: 14rem ;">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCA1IE9jdA%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00394922-zdvkucqhmv-portrait.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body mt-0 p-0">
+          <p class="card-text">
+          <h5>Sunburn Arena Ft. Alan Walker - Chennai</h5>
+          <span>Four Points by Sheraton
+            Mahabalipuram Resort
+            Concerts</span></p>
+        </div>
+      </div>
+      <div class="card col border-0 bg-transparent" style="width: 14rem ;">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCA3IFNlcA%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00408440-fwzaqgyrbu-portrait.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body mt-0 p-0">
+          <p class="card-text">
+          <h5>DREAMS ON FIRE ANDREA
+            LIVE IN CONCERT
+          </h5><span>YMCA Grounds: Chennai
+            Concerts</span></p>
+        </div>
+      </div>
+      <div class="card col border-0 bg-transparent" style="width: 14rem ;">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyMyBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00406791-wqbnqvpyfx-portrait.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body mt-0 p-0">
+          <p class="card-text">
+          <h5>Bandland 2024
+          </h5><span>Nice Grounds, BIEC: Bengaluru
+            Concerts</span>
+          </p>
+        </div>
+      </div>
+      <div class="card col border-0 bg-transparent" style="width: 14rem ;">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCA3IFNlcCBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00408866-vvnhbxhavn-portrait.jpg  "
+          class="card-img-top" alt="...">
+        <div class="card-body mt-0 p-0">
+          <p class="card-text">
+          <h5>SEASONS
+          </h5><span>Museum Theatre: Chennai
+            Concerts</span></p>
+        </div>
+      </div>
+      <div class="card col border-0 bg-transparent" style="width: 14rem ;">
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA4IFNlcA%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00408112-gcayngrbwg-portrait.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body mt-0 p-0">
+          <p class="card-text">
+          <h5>UNNI MENON - LIVE IN
+            CONCERT
+          </h5><span>Vani Mahal: Chennai
+            Concerts</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--section-8==>footer-->
+  <footer class="footer bg-black ">
+    <div class="footsec1" style="display: flex;align-items: center;">
+      <div style="margin-top: 3%;margin-left: 10%; width: 100%;display: flex; align-items: center;">
+        <img src="https://in.bmscdn.com/webin/common/icons/hut.svg" />
+        <h5 style="margin-left: 1%; color: rgb(255, 255, 255);">List Your show</h5>
+        <p style="margin-left: 2%;color: rgb(255, 255, 255);margin-top: 11px;">Got a show, event, activity or a great
+          experience? Partner with us & get listed on BookMyShow</p>
+      </div>
+    </div>
+    <div class="footsec2" style="background: rgb(51, 51, 56);">
+      <div style="margin-left: 10%;">
+        <div class="line1">
+          <p>
+          <p style="font-size: small; color: rgb(175, 172, 172);">MOVIES NOW SHOWING</p>
+          <p style="margin-top: 0%; font-size: smaller; color: rgb(134, 132, 132);">Stree 2: Sarkate Ka Astank | The
+            Greatest of All Time | Saripodhaa Sanivaaram | Fakt Purusho Maste The House of Dead Horror | Khel Khel Mein
+            | Wild Roller Coaster | Prehistoric Admiriture</p>
+          </p>
+        </div>
+        <div class="line2">
+          <p>
+          <p style="font-size: small; color: rgb(175, 172, 172);">COUNTRIES</p>
+          <p style="margin-top: 0%; font-size: smaller; color: rgb(134, 132, 132);">Indonesia | Singapore | UAE Sri
+            Lanka | West Indies</p>
+          </p>
+        </div>
+        <div class="line3">
+          <p>
+          <p style="font-size: small; color: rgb(175, 172, 172);">HELP</p>
+          <p style="margin-top: 0%; font-size: smaller; color: rgb(134, 132, 132);">About Us Contact Us Curont Opening
+            Press Release Press Coverage | Sitemap | FAQs | Terms and Condmons Privacy Policy</p>
+          </p>
+        </div>
+        <div class="line4">
+          <p>
+          <p style="font-size: small; color: rgb(175, 172, 172);">BOOKMYSHOW EXCLUSIVES</p>
+          <p style="margin-top: 0%; font-size: smaller; color: rgb(134, 132, 132);">Lollapalooza India | Superstar |
+            BookASmile | Corporate Vouchers | Gift Cards | List My Show | Offers | Steam | Trailers</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
